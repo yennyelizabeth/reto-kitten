@@ -1,0 +1,23 @@
+/* reglas condiciones según medio dispositivo */
+/* desktop */
+@media (min-width: 992px)  {
+  body{background-image:  url('../assets/img/dawn.png');}
+   .mobil {display: none;}
+   .tablet {display: none;}
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width:991px ) {
+  body { background-image:  url('../assets/img/sunny-day.jpg'); }
+   .mobil {display: none;}
+   .tablet {display: block;}
+   .desktop {display: none;}
+  }
+
+/* mobil */
+@media (min-width: 0px) and (max-width: 767px) {
+  body { background-image:  url('../assets/img/night.jpg'); }
+   .mobil {display: block;}
+   .tablet {display: none;}
+   .desktop {display: none;}
+  }
